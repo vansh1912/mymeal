@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center ;
+}
+
+.logo{
+    height: 56px;
+}
+.logo img{
+    height: 60px;
+    width: 120px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-right: 25px;
+}
+.navbar{
+    position: relative;
+}
+.navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+.navbar ul li a{
+    color: white;
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+.navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+    padding: 3px 90px ;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../images/foodbg.jpg') no-repeat center center/cover ;
+    position: absolute;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+#home p{
+    color: rgb(10, 10, 10);
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 35px;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;  
+}
+
+.btn{
+    padding: 6px 20px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.4rem;
+    margin: 17px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.h-primary2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 110px;
+    padding-top: 10px;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;  
+}
+
+#service{
+    margin: 12px;
+    display: flex;
+}
+#service .box{
+    border: 2px solid rgb(117, 112, 112);
+    margin: 3px 6px;
+    border-radius: 30px;
+    background: rgb(235, 234, 234);
+    padding: 20px;
+}
+#service .box img{
+    height: 165px;
+    margin: auto;
+    display: block;
+}
+#service .box h2{
+    text-align: center;
+    align-items: center;
+}
+#service .box p{
+    font-size: 1.2rem;
+    align-items: center;
+    text-align: center;
+      font-family: 'Baloo Thambi 2', cursive;
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section .h-prim{
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    
+}
+.clients img{
+    height: 160px;
+    padding: 20px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../images/grey-bg.png');
+    width: 100%;
+    height: 42%;
+    opacity: 0.2;
+    
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    z-index: -2;
+    opacity: 0.7;
+    background: url(../images/contact2.jpg) no-repeat center center/cover ;
+}
+
+#contact .h-prim3{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    align-items: center;
+    text-align: center;
+}
+
+#contact-box input{
+    display: block;
+    align-items: center;
+    width: 650px;
+   padding: 0.5rem;
+   border-radius: 9px;
+   font-size: 1.1rem;
+}
+#contact-box textarea{
+    align-items: center;
+    width: 650px;
+   padding: 0.5rem;
+   border-radius: 9px;
+   font-size: 1.1rem;
+}
+#contact-box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box label{
+    font-size: 1.4rem;
+    font-family: 'Baloo Thambi 2', cursive;
+}
